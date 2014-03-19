@@ -236,6 +236,7 @@ def main():
             print("WIN")
             root.destroy()
             break
+    #PURGE THE UNCLEAN
     clear()
 #Откуда есть пошло начало программы    
 if __name__ == "__main__":
