@@ -21,7 +21,7 @@ class Object():
         self.HP = HP
         self.speed = speed
         self.size = size
-        self.image_path = "../images/player.gif"
+        self.image_path = "images/player.gif"
         self.image = PhotoImage(file=self.image_path)
         self.image_ref = window[0].create_image(self.x, self.y, image=self.image)
         
@@ -86,7 +86,7 @@ class Missile(Object):
         self.speed = speed
         self.size = size
         global_missile_list.append(self)
-        self.image_path = "../images/missile.gif"
+        self.image_path = "images/missile.gif"
         self.image = PhotoImage(file=self.image_path)
         self.image_ref = window[0].create_image(self.x, self.y, image=self.image)
         
@@ -140,7 +140,7 @@ class Enemy(Object):
         self.size = size
         global_object_list.append(self)
         self.range = e_range
-        self.image_path = "../images/enemy.gif"
+        self.image_path = "images/enemy.gif"
         self.image = PhotoImage(file=self.image_path)
         self.image_ref = window[0].create_image(self.x, self.y, image=self.image)
 
@@ -162,7 +162,7 @@ class Decoration(Object):
         self.HP = HP
         self.size = size
         global_object_list.append(self)
-        self.image_path = "../images/decor{}.gif".format(randint(1,5))
+        self.image_path = "images/decor{}.gif".format(randint(1,5))
         self.image = PhotoImage(file=self.image_path)
         window[0].create_image(self.x, self.y, image=self.image)
         self.image_ref = window[0].create_image(self.x, self.y, image=self.image)
